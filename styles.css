@@ -1,0 +1,49 @@
+:root {
+    --light-bg: #f5f5f5;
+    --light-text: #333;
+    --dark-bg: #1e1e1e;
+    --dark-text: #f5f5f5;
+    --primary-color: #7ac4c0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--light-bg);
+    color: var(--light-text);
+    margin: 0;
+    padding: 0;
+    transition: background 0.3s, color 0.3s;
+}
+
+.dark-mode {
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#theme-toggle {
+    padding: 5px 10px;
+    cursor: pointer;
+}
